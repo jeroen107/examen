@@ -66,4 +66,11 @@ class CustomerController extends Controller
         return redirect(route('customer.index'))->with('message', 'De klant is verwijderd')->with('status', 'success');
     }
 
+    public function show($id){
+        $customer = Customer::findorfail($id);
+        $pets = $customer->Pets()->get();
+
+        return view('customer.show', compact('customer', 'pets'));
+    }
+
 }

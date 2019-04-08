@@ -25,3 +25,4 @@ Route::post('/customer-store', 'CustomerController@store')->name('customer.store
 Route::get('/customer-edit/{id}', 'CustomerController@edit')->name('customer.edit');
 Route::post('/customer-update', 'CustomerController@update')->name('customer.update');
 Route::delete('/customer-delete/', 'CustomerController@delete')->name('customer.delete');
+Route::get('/customer-show/{id}', 'CustomerController@show')->name('customer.show');

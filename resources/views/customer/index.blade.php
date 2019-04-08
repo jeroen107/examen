@@ -19,7 +19,7 @@
                 <tbody>
                 @foreach($customers as $customer)
                     <tr>
-                        <td>{{$customer->name}}</td>
+                        <td><a href="{{route('customer.show', $customer->id)}}">{{$customer->name}}</a></td>
                         <td>{{$customer->email}}</td>
                         <td>{{$customer->phone}}</td>
                         <td><a href="{{route('customer.edit', $customer->id)}}"><button class="btn btn-primary">Aanpassen</button></a></td>
