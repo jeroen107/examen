@@ -26,3 +26,9 @@ Route::get('/customer-edit/{id}', 'CustomerController@edit')->name('customer.edi
 Route::post('/customer-update', 'CustomerController@update')->name('customer.update');
 Route::delete('/customer-delete/', 'CustomerController@delete')->name('customer.delete');
 Route::get('/customer-show/{id}', 'CustomerController@show')->name('customer.show');
+
+Route::get('/pet-create/{owner_id}', 'PetController@create')->name('pet.create');
+Route::post('/pet-store', 'PetController@store')->name('pet.store');
+Route::get('/pet-edit/{id}', 'PetController@edit')->name('pet.edit');
+Route::post('/pet-update', 'PetController@update')->name('pet.update');
+Route::delete('/pet-delete/', 'PetController@delete')->name('pet.delete');
