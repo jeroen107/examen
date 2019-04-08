@@ -22,8 +22,16 @@
                         <td>{{$customer->name}}</td>
                         <td>{{$customer->email}}</td>
                         <td>{{$customer->phone}}</td>
-                        <td><button class="btn btn-primary">edit</button></td>
-                        <td><button class="btn btn-danger">verwijderen</button></td>
+                        <td><a href="{{route('customer.edit', $customer->id)}}"><button class="btn btn-primary">Aanpassen</button></a></td>
+                        <form action="{{route('customer.delete')}}" method="post">
+                            @csrf
+                            @method('delete')
+                            <input type="hidden" value="{{$customer->id}}" name="customer_id">
+                            <td><a href="{{route('customer.delete')}}"><button class="btn btn-danger">Verwijderen</button></a></td>
+
+
+                        </form>
+
                     </tr>
                     @endforeach
                 </tbody>
