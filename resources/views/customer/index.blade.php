@@ -3,7 +3,7 @@
 
 <div class="container">
     <div class="row">
-        <a><button class="btn btn-primary">Klant Toevoegen</button></a>
+        <a href="{{route('customer.create')}}"><button class="btn btn-primary">Klant Toevoegen</button></a>
         <div class="col-md-12">
 
             <table class="table table-striped">
