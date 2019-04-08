@@ -11,6 +11,11 @@ class CreateCustomersTable extends Migration
      *
      * @return void
      */
+
+    /**
+     * hier word de tabel customers aangemaakt
+     */
+
     public function up()
     {
         Schema::create('customers', function (Blueprint $table) {

@@ -1,5 +1,6 @@
 @include('layouts.app')
 
+{{--hier staat de layout van het overzicht van huisdieren die bij een bepaalde persoon horen--}}
 
 <div class="container">
     <a href="{{route('pet.create', $customer)}}"><button class="btn btn-primary">Huisdier Toevoegen</button></a>

@@ -9,6 +9,11 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
+
+    /**
+     * hier runt hij de seeders zodat de tabellen gevuld worden
+     */
+
     public function run()
     {
          $this->call(UsersTableSeeder::class);

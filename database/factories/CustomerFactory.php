@@ -2,6 +2,9 @@
 
 use Faker\Generator as Faker;
 
+/**
+ * hier worden random gegevens ingevuld voor klant
+ */
 
 $factory->define(App\Customer::class, function (Faker $faker) {
     return [

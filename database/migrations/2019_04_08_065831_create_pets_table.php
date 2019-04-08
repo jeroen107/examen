@@ -11,6 +11,10 @@ class CreatePetsTable extends Migration
      *
      * @return void
      */
+
+    /**
+     * hier word de tabel pets aangemaakt
+     */
     public function up()
     {
         Schema::create('pets', function (Blueprint $table) {

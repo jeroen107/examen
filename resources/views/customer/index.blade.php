@@ -1,5 +1,6 @@
 @include('layouts.app')
 
+{{--hier staat de layout van het overzicht van klanten--}}
 
 <div class="container">
     <div class="row">

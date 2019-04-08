@@ -9,6 +9,11 @@ class UsersTableSeeder extends Seeder
      *
      * @return void
      */
+
+    /**
+     * hier maak ik een specafieke user aan zodat je de inloggegevens weet
+     */
+
     public function run()
     {
         $u = new App\User();

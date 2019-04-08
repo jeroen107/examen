@@ -9,6 +9,11 @@ class CustomersTableSeeder extends Seeder
      *
      * @return void
      */
+
+    /**
+     * hier word de tabel customers gevuld
+     */
+
     public function run()
     {
         factory(App\Customer::class, 10)->create();

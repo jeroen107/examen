@@ -1,3 +1,5 @@
+
+{{--hier staat de layout waar overal wel gebruikt word--}}
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>

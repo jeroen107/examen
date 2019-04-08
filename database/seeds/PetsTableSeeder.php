@@ -9,6 +9,11 @@ class PetsTableSeeder extends Seeder
      *
      * @return void
      */
+
+    /**
+     * hier word de tabel pet gevuld
+     */
+
     public function run()
     {
         factory(App\Pet::class, 10)->create();

@@ -1,5 +1,7 @@
 @include('layouts.app')
 
+{{--hier staat de layout van het formulier om klanten toe te voegen--}}
+
 <div class="container">
     <div class="row">
 
